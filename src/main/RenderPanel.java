@@ -143,7 +143,7 @@ public class RenderPanel extends JPanel {
       pv3.y = ((focalLength * v3.y) / (focalLength - v3.z));
       pv4.x = ((focalLength * v4.x) / (focalLength - v4.z));
       pv4.y = ((focalLength * v4.y) / (focalLength - v4.z));
-      // draw triangle
+      // draw quad
       if ((pv1.z / dist) * scrollDist < 32 && (pv2.z / dist) * scrollDist < 32 && (pv3.z / dist) * scrollDist < 32 && (pv4.z / dist) * scrollDist < 32) {
         Path2D path = new Path2D.Double();
         path.moveTo(pv1.x, -pv1.y);
